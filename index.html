@@ -1,1 +1,29 @@
-<!-- Updated HTML with Drive Integration -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Library</title>
+  <link rel="manifest" href="manifest.json" />
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script src="app.js" defer></script>
+  <script src="https://apis.google.com/js/api.js"></script>
+<script src="drive.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Course Library</h1>
+  <div id="signin"></div>
+  <button onclick="handleDriveUpload()">Upload to Drive</button>
+  <button onclick="openDrivePicker()">Browse Drive</button>
+  <div id="file-preview"></div>
+  <div id="flashcards"></div>
+
+  <form id="register-form">
+    <h3>Register for a Course</h3>
+    <input type="text" placeholder="Name" required />
+    <input type="email" placeholder="Email" required />
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
