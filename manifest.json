@@ -1,1 +1,16 @@
 { /* PWA manifest */ }
+{
+  "name": "Course Library",
+  "short_name": "Library",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "description": "A PWA for managing course files and flashcards",
+  "icons": [
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ]
+}
